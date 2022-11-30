@@ -5,7 +5,7 @@ var chat_submit = document.getElementById('chatSubmit');
 
 function display_message(msg, is_new) {
   var new_message = is_new ? "new" : "";
-  var avatar = "<img class='avatar' src='img/" + msg.from + ".png''>";
+  var avatar = "<img class='avatar' src='img/" + msg.from.toLowerCase() + ".png''>";
   var message =
     "<div class='chat-message-content'><div class='chat-message-time'>" +
     format_time(msg.datetime) +
