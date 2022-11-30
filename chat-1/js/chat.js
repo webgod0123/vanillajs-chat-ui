@@ -66,15 +66,15 @@ var chat = new function(){
 	]
 	function operatorChat(){
 		var randResponse = responses[Math.floor(Math.random()*responses.length)];
-		dispatchChatEvent(randResponse, "operator");
+		dispatchChatEvent(randResponse, "Operator");
 	}
 	function operatorAnswerChat(){
 		var randResponse = answers[Math.floor(Math.random()*responses.length)];
-		dispatchChatEvent(randResponse, "operator");
+		dispatchChatEvent(randResponse, "Operator");
 	}
 	function operatorGreetingChat(){
 		var randResponse = greetings[Math.floor(Math.random()*responses.length)];
-		dispatchChatEvent(randResponse, "operator");
+		dispatchChatEvent(randResponse, "Operator");
 	}
 
 	function dispatchChatEvent(msg, from){
