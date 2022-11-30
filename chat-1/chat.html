@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>JS Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="chat-content">
+			<h1 class="chat-title">JS Chat</h1>
+			<div id="chatHolder">
+				<div id="chatHistory"></div>
+				<div id="liveChat"></div>
+			</div>
+			<div class="chat-action">
+				<textarea onkeyup="type_message(event)" id="chatInput" placeholder='Type your question here...'></textarea>
+				<input disabled onclick="send_message()" id='chatSubmit' type="button" value='SEND'></input>
+			</div>	
+		</div>
+	</div>
+
+	<script src="js/test.js"></script>
+	<script src="js/chat.js"></script>
+</body>
+</html>

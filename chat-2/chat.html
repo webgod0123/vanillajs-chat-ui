@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>JS Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/chat.css" />
+  </head>
+
+  <body>
+    <div class="chat-window">
+      <div class="chat-title">
+        <h2>PowerFront Chat</h2>
+        <div class="typing-container" id="typing">
+          <div class="typing"></div>
+          <div class="typing"></div>
+          <div class="typing"></div>
+        </div>
+      </div>
+      <div class="chat-holder">
+        <div id="chatHistory"></div>
+        <div id="liveChat"></div>
+      </div>
+      <div class="chat-action">
+        <div class="chat-send-message">
+          <textarea
+            id="chatInput"
+            onkeyup="typeMessage(event)"
+            onkeypress="handleKeyPress()"
+            placeholder="Type your question here..."
+          ></textarea>
+          <button
+            id="chatSubmit"
+            onclick="sendMessage()"
+            type="button"
+            disabled="true"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="chat-tip">
+          Press <b>Enter ↵</b> to add a new line and <b>CTRL + Enter ↵</b> to
+          send your message.
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
